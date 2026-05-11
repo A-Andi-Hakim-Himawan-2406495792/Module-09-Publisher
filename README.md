@@ -9,3 +9,6 @@ Hal ini menandakan bahwa publisher dan subscriber saling terhubung melalui insta
 
 ## Sending and processing event
 ![alt text](image-1.png)
+
+## Monitoring chart based on publisher
+![alt text](image-2.png)
