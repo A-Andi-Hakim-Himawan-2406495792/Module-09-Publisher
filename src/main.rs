@@ -22,11 +22,12 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
 }
 
 fn main() {
-    let mut p = CrosstownBus::new_queue_publisher("amqp://guest:guest@localhost:5672".to_owned()).unwrap();
+    let mut p = CrosstownBus::new_queue_publisher("amqps://hgqhrwsw:UZFcI164aGUGI9Y0QOFTTXe0gzGa779K@fuji.lmq.cloudamqp.com:5671/hgqhrwsw".to_owned()).unwrap();
 
     let _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage { user_id: "1".to_owned(), user_name: "2406495792-Amir".to_owned() });
     let _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage { user_id: "2".to_owned(), user_name: "2406495792-Budi".to_owned() });
     let _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage { user_id: "3".to_owned(), user_name: "2406495792-Cica".to_owned() });
     let _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage { user_id: "4".to_owned(), user_name: "2406495792-Dira".to_owned() });
     let _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage { user_id: "5".to_owned(), user_name: "2406495792-Emir".to_owned() });
+    println!("Semua event publisher berhasil dikirim ke Cloud!")
 }
