@@ -6,3 +6,6 @@ Hal ini menandakan bahwa publisher dan subscriber saling terhubung melalui insta
 
 ## Running RabbitMQ as message broker
 ![alt text](image.png)
+
+## Sending and processing event
+![alt text](image-1.png)
